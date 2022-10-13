@@ -1,0 +1,74 @@
+body{
+    background: #ffffff;
+}
+
+.titulo-principal{
+    padding-left: 20px;
+    text-align: center;
+}
+/*padding é um espaçamento interno*/
+
+#imgbanner{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.principal{
+    background: #CCCCCC;
+    padding: 30px;
+}
+
+.texto-centralizado{
+    text-align: center;
+    color: rgb(53, 0, 0);
+}
+
+p{
+    text-align: center;
+}
+
+#missao{
+    font-size: 20px;
+}
+
+/*chamo uma id com "#" */
+
+em strong{
+    color: red;
+}
+
+.obs{
+    font-size: 10px;
+    text-align: right;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imgcampeoes{
+    width: 50%;
+    margin-left: 50%;
+}
+
+.itens{
+    font-style: italic;
+}
+
+.beneficios{
+    background: #ffffff;
+    padding: 20px;
+}
+
+.encerramento{
+    background: #CCCCCC;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+/*chamo uma classe com "." */
+

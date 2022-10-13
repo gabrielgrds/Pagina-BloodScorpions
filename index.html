@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+        <!--"lang" para falar qual idioma iremos utilizar na página-->
+        <!--"doctype html" para falar que é um documento html versão mais recente, no caso versão 5-->
+        <!--"html" é uma tag de documentação então precisa abrir e fechar-->
+    <head>
+        <meta charset="UTF-8">
+        <title>BloodScorpions</title>
+        <link rel="stylesheet" href="style.css">
+        <!--tag link para linkar com o css, rel para relacionar a tabela de style, href para endereço referencia e falar onde o arquivo está-->
+        <!--tudo o que estiver no "head" é o que quero informar para o navegador (não estará visível ou é apenas informação)-->
+        <!--charset é um atributo, qual conjunto de caracteres iremos usar-->
+        <!--usaremos o dicionário "UTF-8"-->
+        <!--tag meta que passa informação-->
+        <!--"title" para definir qual o título da página quando abrir-->
+    </head>
+
+    <body>
+        <header>
+            <h1 class="titulo-principal">BloodScorpions</h1>
+        </header>
+        <!--"header" para falar que é o cabecalho-->
+        <img id="imgbanner" src="banner2.jpg">
+        <!--chamando a imagem para mostrar na pagina-->
+        <div class="principal">
+            <h2 class="texto-centralizado">Sobre o BloodScorpions</h2> 
+            <!--"h1" de heading para ser o titulo-->
+            <!--"text-align" para centralizar o texto-->
+            <p>Criado em 2018 por um grupo de amigos que resolveram fazer história no servidor de Rainbown Six Siege, os <strong>BloodScorpions</strong> cresceram a cada mês, sendo assim, formados times e lines em diversos jogos e modalidades do servidor mundial</p>
+            <!--"p" de paragrafo-->
+            <!--"strong" para deixar em negrito-->
+            <p id="missao"><em>Nossa missão é: <strong>"Proporcionar uma gameplay de qualidade¹ e divertida para nossos membros".</strong></em></p>
+            <!--"css: "style"" e falo o que eu desejo mudar, no caso o tamanho da fonte para 20px, o normal é 16px-->
+            <!--"em" para deixar italico-->
+            <p>Oferecemos profissionais experientes e pro players <s>(alguns ruins também)</s> em diversos jogos, fazendo assim com que haja muita diversão no servidor.</p>
+            <!--tudo o que estiver entre "<>" é chamado de tag-->
+            <!--"s" para riscar texto-->
+            <!--tudo o que estiver no "body" é o que quero que apareça na tela-->
+            <p class="obs">¹ - não mencionado se era qualidade boa ou ruim;</p>
+        </div>
+        <div class="beneficios">
+            <h3 class="texto-centralizado">Benefícios</h3>
+            <ul>
+                <li class="itens">Receptividade;</li>
+                <li class="itens">Ambiente amigável;</li>
+                <li class="itens">Jogadores ruins;</li>
+                <li class="itens">Sempre alguém online;</li>
+            </ul>        
+            <img class="imgcampeoes" src="campeoes.png">
+        </div>
+        <div class="encerramento">
+            <h3 class="texto-centralizado">Fundadores</h3>
+            <ul>
+                <li>Gabriel Reis</li>
+                <li>Jhoninha</li>
+                <li>Rodrigo</li>
+                <li>Goka</li>
+                <li>Zabuza</li>
+            </ul>
+        </div>
+
+        <!--"ul" de unordered list ou "ol" de ordered list-->
+        <!--"li" de list itens-->
+    </body>
+        <!--existem 3 tipos de utilização do css, o in line fica semelhante a isso:
+        <p style="font-size: 20px; text-align:center"> = precisa ser feito em cada tag;
+        o segundo é utilizando o style lá no head:
+        <style>
+            p{
+                text-align:center
+            }
+        </style>
+        -->
+
+        <!--"UX" significa quem esta no time de front end responsavel pela usabilidade do site-->
+        <!--"UI" significa quem esta no time de front end responsavel pelo design do site-->
+</html>
