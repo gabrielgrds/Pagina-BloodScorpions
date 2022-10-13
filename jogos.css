@@ -1,0 +1,20 @@
+header{
+    background: #BBBBBB;
+}
+
+.imgprincipal{
+    width: 18%;
+}
+
+nav li{
+    display: inline; /*deixa as palavras da navegacao uma do lado da outra*/
+    margin: 0 0 0 15px; /*cima, direita, baixo e esquerda*/
+}
+
+nav a{
+    text-transform: uppercase; /*transforma a letra em maiusculo*/
+    color: #000000;
+    font-weight: bold; /*deixa o peso da letra em "bold" = negrito*/
+    font-size: 22px;
+    text-decoration: none;
+}
