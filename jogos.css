@@ -1,9 +1,22 @@
 header{
     background: #BBBBBB;
+    padding: 20px 0px; /*espacamento interno para cima e para baixo + esquerda direita*/
+}
+
+.cabecalho{
+    width: 1050px;
+    position: relative; /*a posicao vai variar com a tela*/
+    margin: 0 auto; /*cima baixo, esquerda direita*/
 }
 
 .imgprincipal{
-    width: 18%;
+    width: 250px;
+}
+
+nav{
+    position: absolute; /*deixo a posicao das coisas onde eu quiser colocar */
+    top: 125px;
+    right: 0px;
 }
 
 nav li{
@@ -13,7 +26,7 @@ nav li{
 
 nav a{
     text-transform: uppercase; /*transforma a letra em maiusculo*/
-    color: #000000;
+    color: #530000;
     font-weight: bold; /*deixa o peso da letra em "bold" = negrito*/
     font-size: 22px;
     text-decoration: none;
