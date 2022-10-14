@@ -32,25 +32,78 @@ nav a{
     text-decoration: none;
 }
 
+nav a:hover{ /*quando o mouse estiver por cima dos links "a" da navegação*/
+    color: #C78C79;
+    text-decoration: underline;
+}
+
 .listfundadores{
     width: 940px;
     margin: 0 auto;
     padding: 50px 0px;
+    text-align: center;
 }
 
 .listfundadores li{
     display: inline-block; /*isso faz com que a lista fique com os itens um do lado do outro*/
     text-align: center;
-    width: 33%;
+    width: 27%;
     vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*faz o espaçamento (padding) fique dentro do percentual (wigth)*/;
+    border: 2.5px solid #000000;
+    border-radius: 15px;
+}
+
+.listfundadores li:hover{
+    border-color: #C78C79;
+}
+
+.listfundadores li:active{ /*quando vc clicar no item*/
+    border-color: red;
+}
+
+.listfundadores li:hover h2{ /*quando o mouse estiver em cima da lista de fundadores, quero modificar o h2*/
+    font-size: 25px;
 }
 
 .listfundadores h2{
     font-size: 21px;
     font-weight: bold;
+    color: goldenrod;
+    margin-bottom: 10px;
 }
 
 .ftfundadores{
     width: 150px;
     height: 150px;
+}
+
+.nick{
+    font-size: 18px;
+    font-weight: lighter;
+    color: purple;
+    margin-top: 5px;
+}
+
+.descricao{
+    font-weight: bold;
+    font-size: 18px;
+    color: #530000;
+    margin-top: 10px;
+}
+
+footer{
+    background: url("bg.png");
+    text-align: center;
+}
+
+.ftfinal{
+    width: 250px;
+}
+
+.copyright{
+    color: #530000;
+    font-weight: bold;
 }
