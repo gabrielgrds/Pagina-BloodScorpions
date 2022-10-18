@@ -104,7 +104,10 @@ footer{
 }
 
 .copyright{
-    color: #530000;
+    color: #FFFFFF;
     font-weight: bold;
+    font-size: 13px;
 }
-/**/
+
+/*para centralizar um texto dentro de uma div, basta fazer text-align center (centraliza texto inline)
+caso, eu queira centralizar uma div inteira(block) eu preciso definir o width e deixar margin-left e margin-right no "auto"*/
