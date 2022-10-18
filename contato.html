@@ -25,8 +25,54 @@
     </body>
     
     <main>
-        
+        <form>
+            <label for="nickdiscord">Nick Discord:</label>
+            <input type="text" id="nickdiscord" class="input-padrao">
+
+            <label for="whats">WhatsApp:</label>
+            <input type="text" id="whats" class="input-padrao">
+
+            <label for="gamefav">Jogo Favorito:</label>
+            <input type="text" id="gamefav" class="input-padrao">
+
+            <label for="mensagem">Por que gostaria de entrar para o BloodScorpions?</label>
+            <textarea cols="69" rows="10" id="mensagem" class="input-padrao"></textarea> <!--tag "textarea" é para criar uma caixa para escreverem um texto, cols e row são as colunas e linhas da caixa-->
+
+            <div>
+                <p>Qual jogo pretende jogar com os membros?</p>
+                <label for="rocket"><input type="radio" value="Rocket League" name="game" id="rocket">Rocket League</label>
+                <!--para fazer a caixa de selação-->
+                <!-- exemplo de como fazer com label e input separados:
+                <label for="rocket">Rocket League</label>
+                <input type="radio" value="Rocket League" name="game" id="rocket">-->
+
+                <label for="LOL"><input type="radio" value="League of Legends" name="game" id="LOL">League of Legends</label>
+                <!--o "name" colocado em todos os radio serve para quando eu selecionar um, o outro desmarcar-->
+
+                <label for="fps"><input type="radio" value="FPS" name="game" id="fps">FPS</label>
+
+                <label for="todos"><input type="radio" value="Todos/Outros" name="game" id="todos">Todos/Outros</label>
+           </div>
+
+           <div>
+                <p>Qual horário costuma jogar?</p>
+                <select>
+                    <option>Manhã</option>   
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+                <!--tag "select" para criar uma caixa com opções-->
+            </div>
+
+            <label><input type="checkbox" class="checkbox">Participaria do banho dos campeões?</label>
+
+            <input type="submit" value="Enviar Formulário"> <!--enviar o formulário, "value" para definir como ficará o botão de enviar-->
+            
+        </form>
     </main>
+        <!--"label" sempre vai andar junto com o input-->
+        <!--tag "form" para formulário-->
+        <!--tag "input" para entrada de dados e "type=text" para falar que vai ser inserido um texto-->
 
     <footer>
             <img class="ftfinal" src="neon.png">
