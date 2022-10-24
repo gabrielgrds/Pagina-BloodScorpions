@@ -1,3 +1,8 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 header{
     background: #BBBBBB;
     padding: 20px 0px; /*espacamento interno para cima e para baixo + esquerda direita*/
@@ -171,6 +176,51 @@ td, th {
     border: 1px solid black;
     padding: 8px 15px;
     text-align: center;
+}
+
+/*css da página inicial*/
+.imgbanner{
+    width: 40%;
+    margin: 0 30% 0;
+}
+
+.texto-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;    
+    color: #530000;
+    clear: left;
+    /*"clear left" limpa o float left que criei*/
+    /*"em" significa o tamanho do texto base, portanto 2em faz com que o título principal fique duas vezes o tamanho do texto*/
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+    color: #530000;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.obs{
+    font-size: 10px;
+    text-align: end;
+}
+
+.pcgamer{
+    width: 200px;
+    float: left;
+    margin: 0 20px 20px 0;
+    /*float faz com que a imagem flutue e o texto fique ao seu redor, porém modifica toda página*/
+}
+
+.imgcampeoes{
+    width: 70%;
 }
 
 /*para centralizar um texto dentro de uma div, basta fazer text-align center (centraliza texto inline)

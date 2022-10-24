@@ -6,7 +6,10 @@
     <head>
         <meta charset="UTF-8">
         <title>BloodScorpions</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-paginas.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <!--<link rel="stylesheet" href="style.css"> refazendo o style para utilizar o msm que usei nas outras páginas-->
         <!--tag link para linkar com o css, rel para relacionar a tabela de style, href para endereço referencia e falar onde o arquivo está-->
         <!--tudo o que estiver no "head" é o que quero informar para o navegador (não estará visível ou é apenas informação)-->
         <!--charset é um atributo, qual conjunto de caracteres iremos usar-->
@@ -17,41 +20,62 @@
 
     <body>
         <header>
-            <h1 class="titulo-principal"><a href="jogos.html">BloodScorpions</a></h1>
+            <div class="cabecalho">
+                <h1><img class="imgprincipal" src="semlaterais.png" alt="Logo BloodScorpoios"></h1>
+                <!--tag "alt" para descrever uma imagem-->
+                <nav> <!--para criar um menu de navegacao-->
+                    <ul>
+                        <li><a href="index.html">Home</a></li> <!--a tag "a" serve para criar um link para outro html ou site-->
+                        <li><a href="jogos.html">Jogos</a></li>
+                        <li><a href="https://discord.com/channels/705584156628746336/705584157056696401" target="_blank">Discord</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <!--"header" para falar que é o cabecalho-->
-        <img id="imgbanner" src="banner2.jpg">
+        <img class="imgbanner" src="banner2.jpg">
         <!--chamando a imagem para mostrar na pagina-->
-        <div class="principal">
-            <h2 class="texto-centralizado">Sobre o BloodScorpions</h2> 
-            <!--"h1" de heading para ser o titulo-->
-            <!--"text-align" para centralizar o texto-->
-            <p>Criado em 2018 por um grupo de amigos que resolveram fazer história no servidor de Rainbown Six Siege, os <strong>BloodScorpions</strong> cresceram a cada mês, sendo assim, formados times e lines em diversos jogos e modalidades do servidor mundial</p>
-            <!--"p" de paragrafo-->
-            <!--"strong" para deixar em negrito-->
-            <p id="missao"><em>Nossa missão é: <strong>"Proporcionar uma gameplay de qualidade¹ e divertida para nossos membros".</strong></em></p>
-            <!--"css: "style"" e falo o que eu desejo mudar, no caso o tamanho da fonte para 20px, o normal é 16px-->
-            <!--"em" para deixar italico-->
-            <p>Oferecemos profissionais experientes e pro players <s>(alguns ruins também)</s> em diversos jogos, fazendo assim com que haja muita diversão no servidor.</p>
-            <!--tudo o que estiver entre "<>" é chamado de tag-->
-            <!--"s" para riscar texto-->
-            <!--tudo o que estiver no "body" é o que quero que apareça na tela-->
-            <p class="obs">¹ - não mencionado se era qualidade boa ou ruim;</p>
-        </div>
-        <div class="beneficios">
-            <h3 class="texto-centralizado">Benefícios</h3>
-            <ul>
-                <li class="itens">Receptividade;</li>
-                <li class="itens">Ambiente amigável;</li>
-                <li class="itens">Jogadores ruins;</li>
-                <li class="itens">Sempre alguém online;</li>
-            </ul>        
-            <img class="imgcampeoes" src="campeoes.png">
-        </div>
+        <main>
+            <section class="principal">
+                <h2 class="texto-principal">Sobre o BloodScorpions</h2> 
+                <img class="pcgamer" src="pcgamer.jpeg" alt="PC Gamer">
+                <!--"h1" de heading para ser o titulo-->
+                <!--"text-align" para centralizar o texto-->
+                <p>Criado em 2018 por um grupo de amigos que resolveram fazer história no servidor de Rainbown Six Siege, os <strong>BloodScorpions</strong> cresceram a cada mês, sendo assim, formados times e lines em diversos jogos e modalidades do servidor mundial</p>
+                <!--"p" de paragrafo-->
+                <!--"strong" para deixar em negrito-->
+                <p id="missao"><em>Nossa missão é: <strong>"Proporcionar uma gameplay de qualidade¹ e divertida para nossos membros".</strong></em></p>
+                <!--"css: "style"" e falo o que eu desejo mudar, no caso o tamanho da fonte para 20px, o normal é 16px-->
+                <!--"em" para deixar italico-->
+                <p>Oferecemos profissionais experientes e pro players <s>(alguns ruins também)</s> em diversos jogos, fazendo assim com que haja muita diversão no servidor.</p>
+                <!--tudo o que estiver entre "<>" é chamado de tag-->
+                <!--"s" para riscar texto-->
+                <!--tudo o que estiver no "body" é o que quero que apareça na tela-->
+                <p class="obs">¹ - não mencionado se era qualidade boa ou ruim;</p>
+            </section>
+            <!--diferença entre tag div e section é que a div é mais uma divisão normal, a section = é uma divisão onde aquilo tem um conteúdo complexo, semanticamente faz o mesmo sentido, é tipo um título e um texto falando sobre a msm coisa-->
+            
+            <section class="beneficios">
+                <h3 class="texto-principal">Benefícios</h3>
+                <ul>
+                    <li class="itens">Receptividade;</li>
+                    <li class="itens">Ambiente amigável;</li>
+                    <li class="itens">Jogadores ruins;</li>
+                    <li class="itens">Sempre alguém online;</li>
+                </ul>        
+                <img class="imgcampeoes" src="campeoes.png">
+            </section>
+         </main>
 
         <!--"ul" de unordered list ou "ol" de ordered list-->
         <!--"li" de list itens-->
+        <footer>
+            <img class="ftfinal" src="neon.png" alt="Logo BloodScorpions">
+            <p class="copyright">&copy; Copyright BloodScorpions - 2018</p>
+        </footer>
     </body>
+
         <!--existem 3 tipos de utilização do css, o in line fica semelhante a isso:
         <p style="font-size: 20px; text-align:center"> = precisa ser feito em cada tag;
         o segundo é utilizando o style lá no head:
@@ -64,4 +88,6 @@
 
         <!--"UX" significa quem esta no time de front end responsavel pela usabilidade do site-->
         <!--"UI" significa quem esta no time de front end responsavel pelo design do site-->
+
+        <!--separar nos favoritos do chrome todos os sites que me ajudam com programação, desde aquele de programação em bloco, o do jogo, onde buscar fontes, cores, qual código significa qual letra no teclado, etc...-->
 </html>

@@ -21,104 +21,102 @@
                     </ul>
                 </nav>
             </div>
-
         </header>
-    </body>
     
-    <main>
-        <form>
-            <label for="nickdiscord">Nick Discord:</label>
-            <input type="text" id="nickdiscord" class="input-padrao" required placeholder="seunick#código">
+        <main>
+            <form>
+                <label for="nickdiscord">Nick Discord:</label>
+                <input type="text" id="nickdiscord" class="input-padrao" required placeholder="seunick#código">
 
-            <!--"required" faz com que o campo seja necessário preenchimento-->
-            <!--"placeholder" faz uma sugestão até vc digitar no campo-->
+                <!--"required" faz com que o campo seja necessário preenchimento-->
+                <!--"placeholder" faz uma sugestão até vc digitar no campo-->
 
-            <label for="whats">WhatsApp:</label>
-            <input type="number" id="whats" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                <label for="whats">WhatsApp:</label>
+                <input type="number" id="whats" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
-            <label for="gamefav">Jogo Favorito:</label>
-            <input type="text" id="gamefav" class="input-padrao" required placeholder="Nome do Jogo">
+                <label for="gamefav">Jogo Favorito:</label>
+                <input type="text" id="gamefav" class="input-padrao" required placeholder="Nome do Jogo">
 
-            <label for="mensagem">Por que gostaria de entrar para o BloodScorpions?</label>
-            <textarea cols="69" rows="10" id="mensagem" class="input-padrao" required placeholder="Digite seu texto."></textarea> <!--tag "textarea" é para criar uma caixa para escreverem um texto, cols e row são as colunas e linhas da caixa-->
+                <label for="mensagem">Por que gostaria de entrar para o BloodScorpions?</label>
+                <textarea cols="69" rows="10" id="mensagem" class="input-padrao" required placeholder="Digite seu texto."></textarea> <!--tag "textarea" é para criar uma caixa para escreverem um texto, cols e row são as colunas e linhas da caixa-->
 
-            <!--pesquisar na internet "mobileinputtypes", eu consigo ver como o teclado do celular fica para cada type input-->
+                <!--pesquisar na internet "mobileinputtypes", eu consigo ver como o teclado do celular fica para cada type input-->
 
-            <fieldset>
-                <!--tag "fildset" pode ser usada no lugar da "div" porém é mais específico para formulários-->
-                <legend>Qual jogo pretende jogar com os membros?</legend>
-                <!--não temos uma tag "p" e sim "legend" dentro de um fildset-->
-                <label for="rocket"><input type="checkbox" value="Rocket League" id="rocket">Rocket League</label>
-                <!--para fazer a caixa de selação-->
-                <!-- exemplo de como fazer com label e input separados:
-                <label for="rocket">Rocket League</label>
-                <input type="radio" value="Rocket League" name="game" id="rocket">-->
+                <fieldset>
+                    <!--tag "fildset" pode ser usada no lugar da "div" porém é mais específico para formulários-->
+                    <legend>Qual jogo pretende jogar com os membros?</legend>
+                    <!--não temos uma tag "p" e sim "legend" dentro de um fildset-->
+                    <label for="rocket"><input type="checkbox" value="Rocket League" id="rocket">Rocket League</label>
+                    <!--para fazer a caixa de selação-->
+                    <!-- exemplo de como fazer com label e input separados:
+                    <label for="rocket">Rocket League</label>
+                    <input type="radio" value="Rocket League" name="game" id="rocket">-->
 
-                <label for="LOL"><input type="checkbox" value="League of Legends" id="LOL">League of Legends</label>
-                <!--o "name" colocado em todos os radio serve para quando eu selecionar um, o outro desmarcar-->
+                    <label for="LOL"><input type="checkbox" value="League of Legends" id="LOL">League of Legends</label>
+                    <!--o "name" colocado em todos os radio serve para quando eu selecionar um, o outro desmarcar-->
 
-                <label for="fps"><input type="checkbox" value="FPS" id="fps">FPS</label>
+                    <label for="fps"><input type="checkbox" value="FPS" id="fps">FPS</label>
 
-                <label for="outros"><input type="checkbox" value="Outros" id="todos">Outros</label>
-                <!--"checked" faz com que a opção já fique marcada-->
-            </fieldset>
+                    <label for="outros"><input type="checkbox" value="Outros" id="todos">Outros</label>
+                    <!--"checked" faz com que a opção já fique marcada-->
+                </fieldset>
 
-           <fieldset>
-                <legend>Qual horário costuma jogar?</legend>
-                <select>
-                    <option>Manhã</option>   
-                    <option>Tarde</option>
-                    <option>Noite</option>
-                </select>
-                <!--tag "select" para criar uma caixa com opções-->
-            </fieldset>
+                <fieldset>
+                        <legend>Qual horário costuma jogar?</legend>
+                        <select>
+                            <option>Manhã</option>   
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                        <!--tag "select" para criar uma caixa com opções-->
+                </fieldset>
 
-            <!--<label><input type="checkbox" class="checkbox" required>Aceita participar do banho dos campeões?</label>-->
+                <!--<label><input type="checkbox" class="checkbox" required>Aceita participar do banho dos campeões?</label>-->
 
-            <fieldset>
-                <legend class="questioncheckbox">Participaria do banho dos campeões?</legend>
-                <label for="Sim1"><input type="radio" name="banho" value="Sim" id="Sim1" required checked>Sim!</label>
-                <label for="Sim2"><input type="radio" name="banho" value="Sim" id="Sim2" required>Claro!</label>
-                <label for="Sim3"><input type="radio" name="banho" value="Sim" id="Sim3" required>Óbvio que sim!</label>
-                <label for="Sim4"><input type="radio" name="banho" value="Sim" id="Sim4" required>Só se for agora!</label>
-            </fieldset>
+                <fieldset>
+                    <legend class="questioncheckbox">Participaria do banho dos campeões?</legend>
+                    <label for="Sim1"><input type="radio" name="banho" value="Sim" id="Sim1" required checked>Sim!</label>
+                    <label for="Sim2"><input type="radio" name="banho" value="Sim" id="Sim2" required>Claro!</label>
+                    <label for="Sim3"><input type="radio" name="banho" value="Sim" id="Sim3" required>Óbvio que sim!</label>
+                    <label for="Sim4"><input type="radio" name="banho" value="Sim" id="Sim4" required>Só se for agora!</label>
+                </fieldset>
 
-            <input type="submit" value="Enviar Formulário" class="enviar"> <!--enviar o formulário, "value" para definir como ficará o botão de enviar-->
-            
-        </form>
+                <input type="submit" value="Enviar Formulário" class="enviar"> <!--enviar o formulário, "value" para definir como ficará o botão de enviar-->
+                
+            </form>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Line</th>
-                    <th>Responsável</th>
-                </tr>
-            </thead>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Line</th>
+                        <th>Responsável</th>
+                    </tr>
+                </thead>
 
-            <tbody>
-                <tr>
-                    <td>Rocket</td>
-                    <td>Kikoow</td>
-                </tr>
-                <tr>
-                    <td>LOL</td>
-                    <td>gtsilva</td>
-                </tr>
-                <tr>
-                    <td>R6</td>
-                    <td>gabrielgrds</td>
-                </tr>
-            </tbody>
-        </table>
+                <tbody>
+                    <tr>
+                        <td>Rocket</td>
+                        <td>Kikoow</td>
+                    </tr>
+                    <tr>
+                        <td>LOL</td>
+                        <td>gtsilva</td>
+                    </tr>
+                    <tr>
+                        <td>R6</td>
+                        <td>gabrielgrds</td>
+                    </tr>
+                </tbody>
+            </table>
 
-    </main>
-        <!--"label" sempre vai andar junto com o input-->
-        <!--tag "form" para formulário-->
-        <!--tag "input" para entrada de dados e "type=text" para falar que vai ser inserido um texto-->
+        </main>
+            <!--"label" sempre vai andar junto com o input-->
+            <!--tag "form" para formulário-->
+            <!--tag "input" para entrada de dados e "type=text" para falar que vai ser inserido um texto-->
 
-    <footer>
-            <img class="ftfinal" src="neon.png" alt="Logo BloodScorpions">
-            <p class="copyright">&copy; Copyright BloodScorpions - 2018</p>
-    </footer>
-
+        <footer>
+                <img class="ftfinal" src="neon.png" alt="Logo BloodScorpions">
+                <p class="copyright">&copy; Copyright BloodScorpions - 2018</p>
+        </footer>
+    </body>
 </html>
