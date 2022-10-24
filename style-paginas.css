@@ -223,5 +223,14 @@ td, th {
     width: 70%;
 }
 
+.mapa{
+    padding: 3em 0;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
 /*para centralizar um texto dentro de uma div, basta fazer text-align center (centraliza texto inline)
 caso, eu queira centralizar uma div inteira(block) eu preciso definir o width e deixar margin-left e margin-right no "auto"*/
