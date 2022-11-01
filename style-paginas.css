@@ -114,10 +114,7 @@ footer{
     font-size: 13px;
 }
 
-main{
-    width: 940px;
-    margin: 0 auto;
-}
+/*main era aqui*/
 
 form{
     margin: 40px 0;
@@ -190,8 +187,33 @@ td, th {
     margin: 0 0 1em;    
     color: #530000;
     clear: left;
+    /*text-shadow: 2px 2px #530000;*/
     /*"clear left" limpa o float left que criei*/
     /*"em" significa o tamanho do texto base, portanto 2em faz com que o título principal fique duas vezes o tamanho do texto*/
+}
+
+/*
+.texto-principal::first-letter{
+    font-weight: bold;
+}
+
+.texto-principal::before{
+    content: "[ ";
+}
+
+.texto-principal::after{
+    content: " ]";
+}
+*/
+
+/*para selecionar um filho direto usamos o > (main > p), para selecionar irmão o + (img + p), todos os paragrafos após algo o ~(img ~p)*/
+/*para não selecionar algo usamos: .principal p:not(#missao)*/
+
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .principal p{
@@ -221,6 +243,12 @@ td, th {
 
 .mapa{
     padding: 2em 0;
+    background: linear-gradient(#fefefe, #cccccc); /*linear-grandient faz um gradiente entre cores, tbm posso escolher a inclinação exemplo (45deg, black, white)*/
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
 }
 
 .mapa p{
@@ -230,6 +258,7 @@ td, th {
 
 .beneficios{
     padding: 3em 0;
+    background: #cccccc;
 }
 
 .itens{
@@ -238,6 +267,10 @@ td, th {
 
 .itens:first-child{ /*"first-clild" quer fazer algo em relação ao primeiro item da lista de classes que foram chamas de "itens", pode ser last-chield tbm ou "nth-chield(n)" onde n é o número que eu quero tratar ou até mesmo "2n" onde todos os itens pares serão modificados*/
     font-weight: bold;
+}
+
+.itens::before{
+    content: "\2654 ";
 }
 
 .conteudo-beneficios{
@@ -253,8 +286,14 @@ td, th {
 
 .imgcampeoes{
     width: 60%;
+    opacity: 1;
+    transition: 700ms;
+    box-shadow: 10px 10px 20px 10px #000000; /*fazer uma sombra, deslocamento em x, y, "a", "b" (pode ter tbm tipo um blur, e tbm pode ter uma intensidade) e a cor*/
 }
 
+.imgcampeoes:hover{
+    opacity: 0.2;
+}
 
 .videoyt{
     width: 560px;
@@ -262,3 +301,25 @@ td, th {
 }
 /*para centralizar um texto dentro de uma div, basta fazer text-align center (centraliza texto inline)
 caso, eu queira centralizar uma div inteira(block) eu preciso definir o width e deixar margin-left e margin-right no "auto"*/
+
+@media screen and (max-width: 480px){
+    .cabecalho, .principal, .conteudo-beneficios, .mapa-conteudo, .videoyt{
+        width: auto;
+    }
+    
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+        text-align: center;
+    }
+
+    .lista-beneficios, .imgcampeoes{
+        width: 100%;
+    }
+}
+/*fazer site ficar responsível para celular dentro desse mediaquerry*/
+
+/*celulares tem width normalmente até 480px, pcs começam em 940 normalmente*/
